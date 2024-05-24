@@ -1,5 +1,5 @@
-import bannerImage from "../assets/Ayush Kumar_CSE.png";
-import bannerBackground from "../assets/banner_wallpaper.svg";
+import bannerImage from "docs/assets/Ayush Kumar_CSE.png";
+import bannerBackground from "docs/assets/banner_wallpaper-C0ZE6RLv.svg";
 
 const Banner=()=>{
 
