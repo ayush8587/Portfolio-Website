@@ -1,5 +1,5 @@
 import { useState } from "react";
-import bannerImage from "../assets/my-pic.png";
+import bannerImage from "../assets/Ayush Kumar_CSE.png";
 const About = () => {
    const [data , setData]= useState({
         image: bannerImage,

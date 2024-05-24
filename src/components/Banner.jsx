@@ -1,4 +1,4 @@
-import bannerImage from "../assets/profile-pic.png";
+import bannerImage from "../assets/Ayush Kumar_CSE.png";
 import bannerBackground from "../assets/banner_wallpaper.svg";
 
 const Banner=()=>{
