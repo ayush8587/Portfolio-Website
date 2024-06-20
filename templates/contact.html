@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="contact-section" tabindex="0">
+    <div class="wrapper">
+      <aside class="contact-info">
+        <h2 class="contact-info-title">Contact Information</h2>
+        <p class="contact-info-description">Say something to start a live chat!</p>
+        <div class="contact-info-item" tabindex="0">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/762b28b8d56140551b4d28b87e17462743d9bc135113e5445543dc10212ce9d6?apiKey=e45b0f70c98347c389ce2600147aa9f8&" alt="Phone">
+          <span>+91-8587944427</span>
+        </div>
+        <div class="contact-info-item" tabindex="0">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/512d808d18e098399ff7feaa515f725ed174d702a1023ed5acb6490a763ddfa5?apiKey=e45b0f70c98347c389ce2600147aa9f8&" alt="Email">
+          <span>kumar.ayush9718@gmail.com</span>
+        </div>
+        <div class="contact-info-item contact-info-address" tabindex="0">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/89d05c8fb198280bfede3e7eb718559f91126853722275f2301728fdb977c6de?apiKey=e45b0f70c98347c389ce2600147aa9f8&" alt="Address">
+          <span>Sector 45, Noida, Uttar Pradesh, India</span>
+        </div>
+        <div class="social-icons" tabindex="0">
+          <a href="https://www.linkedin.com/in/singhayush16" target="_blank" class="social-icon"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e4a6b62e97d05fe2e784b835b70855f43aaee528f3b2e6a1168a53d3fb52bc59?apiKey=e45b0f70c98347c389ce2600147aa9f8&" alt="Linkedin"></a>
+          <a href="https://www.instagram.com/kumar_ayush_.16" target="_blank" class="social-icon"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fd17fd9ce1a8f2360a9a333e7d1cec41b6d67c850b366bc0e4ef627935ee3dee?apiKey=e45b0f70c98347c389ce2600147aa9f8&" alt="Instagram"></a>
+          <a href="https://www.github.com/ayush8587" target="_blank" class="social-icon"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a68a1d70a6c118171cdfea2ac46e219add4e7842d90cf2b2a3e5ccf802fc7a67?apiKey=e45b0f70c98347c389ce2600147aa9f8&" alt="Github"></a>
+        </div>
+      </aside>
+      <form action="https://api.web3forms.com/submit" class="contact-form" method="POST">
+        <input type="hidden" name="access_key" value="4fbbd108-3903-4640-86cb-b33574fb3888">
+        {{ form.hidden_tag() }}
+        <h2 class="contact-form-title">Get in Touch</h2>
+        <div class="input-group">
+          {{ form.name.label }}
+          {{ form.name }}
+          <!-- <label for="Name">Name</label>
+          <input type="text" id="Name" name="Name" placeholder="Enter your Name" aria-label="Name"> -->
+        </div>
+        <div class="input-group">
+          {{ form.email.label }}
+          {{ form.email }}
+          <!-- <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" aria-label="Email"> -->
+        </div>
+        <div class="input-group">
+          {{ form.msg.label }}
+          {{ form.msg }}
+          <!-- <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" aria-label="Your Message"></textarea> -->
+        </div>
+        <div  class="submit-button">{{ form.sub }}</div>
+      </form>
+    </div>
+  </section>
+{% endblock %}
