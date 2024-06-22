@@ -305,7 +305,6 @@ body {
 
 .image-column img{
   transition: transform 0.3s ease;
-  width: 100%;
 }
 
 .image-column img:hover{
