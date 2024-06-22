@@ -541,6 +541,8 @@ body {
 .view-more-text{
   text-decoration: none;
   color: white;
+  background: none;
+  border: none;
 }
 
 .contact-section {
@@ -725,3 +727,7 @@ body {
     padding: 10px 20px;
   }
 }
+
+/* .more{
+  display: none;
+} */
